@@ -113,7 +113,7 @@
               <el-input v-model="temp.memo" />
             </el-form-item>
           </el-col>
-          <el-col :span="4">
+          <el-col :span="6">
             <el-form-item label="菜单" prop="menus">
               <el-tree
                 ref="tree"

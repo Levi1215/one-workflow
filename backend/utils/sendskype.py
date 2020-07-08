@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-# author: itimor
 
 # 登录skype
 from skpy import Skype
@@ -20,4 +19,4 @@ def skype_bot(user, content):
 if __name__ == '__main__':
     skypeid = 'live:dafaricky123'
     user = '8:' + skypeid  # skypeid 前面需要加 8
-    skype_bot(user, "hello,gay,你个逗比，不加好友，发你妹的消息啊")
+    skype_bot(user, "hello")
