@@ -1,5 +1,5 @@
 export default {
-  systemTitle: '后台管理系统',
+  systemTitle: '金科智能IT管理系统',
 
   route: {
     login: '登录',
@@ -37,7 +37,7 @@ export default {
     size: '布局大小'
   },
   login: {
-    title: '系统登录',
+    title: '金科智能IT管理系统',
     logIn: '登录',
     username: '账号',
     password: '密码',

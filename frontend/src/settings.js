@@ -2,7 +2,7 @@
 
 module.exports = {
   // title: i18n.t('systemTitle'),
-  title: '后台管理系统',
+  title: '金科智能IT管理系统',
 
   /**
    * @type {boolean} true | false
