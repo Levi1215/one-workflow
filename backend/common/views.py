@@ -27,17 +27,17 @@ class ModelViewSet(viewsets.ModelViewSet):
         if not ip:
             ip = request.META.get('REMOTE_ADDR', "")
         method = request._request.method
-        RequestEvent.objects.create(
-            url=request.path,
-            method=method,
-            query_string=json.dumps({
-                'query_params': request.query_params,
-                'json': request.data
-            }),
-            user=self.request.user,
-            remote_ip=ip,
-            create_time=timezone.now()
-        )
+        # RequestEvent.objects.create(
+        #     url=request.path,
+        #     method=method,
+        #     query_string=json.dumps({
+        #         'query_params': request.query_params,
+        #         'json': request.data
+        #     }),
+        #     user=self.request.user,
+        #     remote_ip=ip,
+        #     create_time=timezone.now()
+        # )
 
     def create(self, request, *args, **kwargs):
         self.watch_audit_log(request)

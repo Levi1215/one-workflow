@@ -55,11 +55,11 @@ class Command(BaseCommand):
         CustomField.objects.create(field_name="部门", order_id=3, field_attribute=True, field_type=1, field_key="group", workflow=leave_wf)
         CustomField.objects.create(field_name="工号", order_id=4, field_attribute=True, field_type=2, field_key="id", workflow=leave_wf)
         # 建立扩展字段
-        c1 = CustomField.objects.create(field_name="请假时间", order_id=10, field_type=7, field_key="start_end_time", workflow=leave_wf)
-        c2 = CustomField.objects.create(field_name="请假类型", order_id=30, field_type=9, field_key="type", field_choice='{"1":"病假", "2":"产假"}', workflow=leave_wf)
-        c3 = CustomField.objects.create(field_name="事由说明", order_id=50, field_type=8, field_key="memo", workflow=leave_wf)
-        c4 = CustomField.objects.create(field_name="领导审批", order_id=60, field_type=9, field_key="leader_radio", field_choice='{"1":"同意", "2":"不同意"}', workflow=leave_wf)
-        c5 = CustomField.objects.create(field_name="人事审批", order_id=80, field_type=9, field_key="hr_radio", field_choice='{"1":"同意", "2":"不同意"}', workflow=leave_wf)
+        c1 = CustomField.objects.create(field_name="日常工作类型", order_id=10, field_type=7, field_key="start_end_time",field_choice='{"1":"软件版本升级", "2":"设备上架","3":"设备变更"}', workflow=leave_wf)
+        c2 = CustomField.objects.create(field_name="设备品牌", order_id=30, field_type=9, field_key="type", field_choice='{"1":"思科", "2":"华为","3":"华三"}', workflow=leave_wf)
+        c3 = CustomField.objects.create(field_name="设备类型", order_id=50, field_type=8, field_key="memo", field_choice='{"1":"路由器", "2":"交换机","3":"防火墙"}',workflow=leave_wf)
+        c4 = CustomField.objects.create(field_name="现版本", order_id=60, field_type=9, field_key="leader_radio", field_choice='{"1":"a", "2":"b"}', workflow=leave_wf)
+        c5 = CustomField.objects.create(field_name="目标版本", order_id=80, field_type=9, field_key="hr_radio", field_choice='{"1":"a", "2":"b"}', workflow=leave_wf)
 
         # 建立初始和结束状态
         s1 = State.objects.create(name="开始", order_id=1, state_type=1, is_hidden=True, participant_type=0, workflow=leave_wf)
