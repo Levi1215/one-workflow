@@ -11,7 +11,7 @@ class MailBotSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class TelegramBotSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = TelegramBot
-        fields = '__all__'
+# class TelegramBotSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = TelegramBot
+#         fields = '__all__'

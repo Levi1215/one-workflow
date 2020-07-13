@@ -14,7 +14,7 @@ class Command(BaseCommand):
         self.stdout.write(self.style.SUCCESS('############ 初始化工单菜单 ###########'))
         ticketmenu = Menu.objects.create(name='工单系统', code='ticket', curl='/ticket', icon='ticket', sequence=4, type=1,
                                       parent_id=topmenu.id)
-        menumodel = Menu.objects.create(name='新建工单', code='new_ticket', curl='/new_ticket', icon='new_ticket', sequence=10, type=2,
+        menumodel = Menu.objects.create(name='工作发起', code='new_ticket', curl='/new_ticket', icon='new_ticket', sequence=10, type=2,
                                         parent_id=ticketmenu.id)
         init_menu(menumodel)
         menumodel = Menu.objects.create(name='编辑工单', code='u_ticket', curl='/u_ticket/:id', icon='u_ticket', sequence=10, type=2,

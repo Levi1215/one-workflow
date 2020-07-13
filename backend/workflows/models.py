@@ -89,7 +89,7 @@ class CustomField(BaseModel):
         verbose_name_plural = verbose_name
 
 
-# 0.普通类型 1.初始状态(用于新建工单时,获取对应的字段必填及transition信息) 2.结束状态(此状态下的工单不得再处理，即没有对应的transition)
+# 0.普通类型 1.初始状态(用于工作发起时,获取对应的字段必填及transition信息) 2.结束状态(此状态下的工单不得再处理，即没有对应的transition)
 state_type = {
     0: '普通状态',
     1: '初始状态',

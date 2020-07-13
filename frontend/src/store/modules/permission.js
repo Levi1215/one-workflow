@@ -183,7 +183,7 @@ export const componentsMap = {
   wftype: () => import('@/views/workflow/wftype'), // 工单类型
 
   // tickets
-  new_ticket: () => import('@/views/ticket/new_ticket'), // 新建工单
+  new_ticket: () => import('@/views/ticket/new_ticket'), // 工作发起
   u_ticket: () => import('@/views/ticket/u_ticket'), // 编辑工单
   s_ticket: () => import('@/views/ticket/s_ticket'), // 处理工单
   my_ticket: () => import('@/views/ticket/my_ticket'), // 我创建的
@@ -192,5 +192,5 @@ export const componentsMap = {
 
   // notice
   mail: () => import('@/views/notice/mail'), // mail bot
-  telegram: () => import('@/views/notice/telegram'), // telegram bot
+  // telegram: () => import('@/views/notice/telegram'), // telegram bot
 }

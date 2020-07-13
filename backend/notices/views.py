@@ -41,14 +41,14 @@ class NoticeViewSet(ModelViewSet):
             except smtplib.SMTPException as e:
                 print(e)
                 data['msg'] = 'error'
-        elif type == 'telegram':
-            import telegram
-            bot_name = request.GET['bot_name']
-            content = request.data.get('content', 'Hello Pornhub')
-            bot_obj = TelegramBot.objects.get(name=bot_name)
-            token = '{}:{}'.format(bot_obj.uid, bot_obj.token)
-            bot = telegram.Bot(token=token)
-            data['msg'] = bot.send_message(chat_id=bot_obj.chat_id, text=content)
+        # elif type == 'telegram':
+        #     import telegram
+        #     bot_name = request.GET['bot_name']
+        #     content = request.data.get('content', 'Hello Pornhub')
+        #     bot_obj = TelegramBot.objects.get(name=bot_name)
+        #     token = '{}:{}'.format(bot_obj.uid, bot_obj.token)
+        #     bot = telegram.Bot(token=token)
+        #     data['msg'] = bot.send_message(chat_id=bot_obj.chat_id, text=content)
         else:
             pass
 
@@ -65,9 +65,9 @@ class MailBotViewSet(ModelViewSet):
     ordering_fields = ['name']
 
 
-class TelegramBotViewSet(ModelViewSet):
-    queryset = TelegramBot.objects.all()
-    serializer_class = TelegramBotSerializer
-    search_fields = ['name']
-    filter_fields = ['type', 'id', 'name']
-    ordering_fields = ['name']
+# class TelegramBotViewSet(ModelViewSet):
+#     queryset = TelegramBot.objects.all()
+#     serializer_class = TelegramBotSerializer
+#     search_fields = ['name']
+#     filter_fields = ['type', 'id', 'name']
+#     ordering_fields = ['name']

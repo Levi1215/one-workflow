@@ -18,7 +18,7 @@ export default {
     wfconf: '工作流配置',
     wftype: '工作流类型',
     ticket: '工单系统',
-    new_ticket: '新建工单',
+    new_ticket: '工作发起',
     u_ticket: '编辑工单',
     s_ticket: '处理工单',
     my_ticket: '我创建的',
@@ -26,7 +26,7 @@ export default {
     all_ticket: '所有工单',
     notice: '通知管理',
     mail: 'mail通知',
-    telegram: 'telegram通知',
+    // telegram: 'telegram通知',
     ComponentDemo: '组件例子',
   },
   navbar: {

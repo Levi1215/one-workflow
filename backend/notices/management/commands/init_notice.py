@@ -17,7 +17,7 @@ class Command(BaseCommand):
         menumodel = Menu.objects.create(name='mail通知', code='mail', curl='/mail', icon='mail', sequence=10, type=2,
                                         parent_id=noticemenu.id)
         init_menu(menumodel)
-        menumodel = Menu.objects.create(name='telegram通知', code='telegram', curl='/telegram', icon='telegram',
-                                        sequence=20, type=2, parent_id=noticemenu.id)
+        # menumodel = Menu.objects.create(name='telegram通知', code='telegram', curl='/telegram', icon='telegram',
+        #                                 sequence=20, type=2, parent_id=noticemenu.id)
         init_menu(menumodel)
         self.stdout.write(self.style.SUCCESS('初始化完成'))

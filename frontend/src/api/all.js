@@ -30,4 +30,4 @@ export const ticketuser = new Request('/ticket/ticketuser/')
 
 // notices
 export const mail = new Request('/notice/mail/')
-export const telegram = new Request('/notice/telegram/')
+// export const telegram = new Request('/notice/telegram/')
