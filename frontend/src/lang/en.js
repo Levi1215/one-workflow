@@ -10,7 +10,6 @@ export default {
     role: 'roleManager',
     menu: 'menuManager',
     icon: 'iconManager',
-    tool: 'tool',
     audit: 'audit',
     test: 'testManager',
     workflow: 'workflow',

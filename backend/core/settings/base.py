@@ -30,7 +30,6 @@ INSTALLED_APPS = [
     'django_filters',  # 过滤
     'corsheaders',  # 跨域
     'common',
-    'tools',
     'systems',
     'workflows',
     'tickets',

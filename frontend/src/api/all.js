@@ -11,9 +11,6 @@ export const role = new Request('/sys/role/')
 export const menu = new Request('/sys/menu/')
 export const perm = new Request('/sys/perm/')
 
-// tools
-export const audit = new Request('/tool/audit/')
-export const simple = new Request('/tool/simple/')
 
 // workflows
 export const workflowtype = new Request('/workflow/workflowtype/')

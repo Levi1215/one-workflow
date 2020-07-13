@@ -8,8 +8,7 @@ from core import settings
 
 urlpatterns = static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + \
               [
-                  # 工具管理
-                  url(r'api/tool/', include(('tools.urls', 'tools'), namespace="tools")),
+                  
                   # 系统管理
                   url(r'api/sys/', include(('systems.urls', 'systems'), namespace="systems")),
                   # 工作流管理

@@ -47,13 +47,6 @@ class Command(BaseCommand):
             menumodel = Menu.objects.create(name='图标管理', code='icon', curl='/icon', icon='icon', sequence=50, type=2, parent=sysmenu)
             init_menu(menumodel)
 
-            self.stdout.write(self.style.SUCCESS('############ 初始化工具菜单 ###########'))
-            toolmenu = Menu.objects.create(name='工具管理', code='tool', curl='/tool', icon='tool', sequence=2, type=1, parent=topmenu)
-            menumodel = Menu.objects.create(name='审计日志', code='audit', curl='/audit', icon='audit', sequence=10, type=2, parent=toolmenu)
-            init_menu(menumodel)
-            menumodel = Menu.objects.create(name='测试页面', code='test', curl='/test', icon='list', sequence=20, type=2, parent=toolmenu)
-            init_menu(menumodel)
-
             self.stdout.write(self.style.SUCCESS('############ 初始化通知菜单 ###########'))
             noticemenu = Menu.objects.create(name='通知管理', code='notice', curl='/notice', icon='notice', sequence=4, type=1, parent=topmenu)
             menumodel = Menu.objects.create(name='邮箱通知', code='mail', curl='/mail', icon='mail', sequence=10, type=2, parent=noticemenu)
