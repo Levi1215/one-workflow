@@ -173,9 +173,6 @@ export const componentsMap = {
   role: () => import('@/views/sys/role'), // 角色
   icon: () => import('@/views/icons/index'), // 图标管理
 
-  // tool
-  audit: () => import('@/views/tool/audit'), // 审计日志
-  test: () => import('@/views/tool/test'), // test
 
   // workflow
   wfset: () => import('@/views/workflow/wfset'), // 工作流设计
