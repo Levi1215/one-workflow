@@ -192,5 +192,4 @@ export const componentsMap = {
 
   // notice
   mail: () => import('@/views/notice/mail'), // mail bot
-  // telegram: () => import('@/views/notice/telegram'), // telegram bot
 }

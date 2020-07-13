@@ -10,9 +10,6 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.DeleteModel(
-            name='TelegramBot',
-        ),
         migrations.AlterField(
             model_name='mailbot',
             name='type',

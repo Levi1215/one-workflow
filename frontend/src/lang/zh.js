@@ -26,7 +26,6 @@ export default {
     all_ticket: '所有工单',
     notice: '通知管理',
     mail: 'mail通知',
-    // telegram: 'telegram通知',
     ComponentDemo: '组件例子',
   },
   navbar: {

@@ -10,8 +10,3 @@ class MailBotSerializer(serializers.ModelSerializer):
         model = MailBot
         fields = '__all__'
 
-
-# class TelegramBotSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = TelegramBot
-#         fields = '__all__'

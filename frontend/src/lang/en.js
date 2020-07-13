@@ -26,7 +26,6 @@ export default {
     all_ticket: 'all_ticket',
     notice: 'notice',
     mail: 'mail',
-    // telegram: 'telegram',
     ComponentDemo: 'ComponentDemo',
   },
   navbar: {
